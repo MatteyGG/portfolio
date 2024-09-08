@@ -21,7 +21,7 @@ const config: Config = {
           code: {
               words: ['[ Code ]'],
               delay: 3,
-              repeat: 3,
+              pauseBetween: 10,
               caretWidth: '10px',
               blinkSpeed: 1
           }

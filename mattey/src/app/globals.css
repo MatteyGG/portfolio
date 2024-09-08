@@ -26,6 +26,119 @@ body {
     rgb(var(--background-start-rgb));
 }
 
+/* Blink animation */
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+/* Rainbow animation */
+.rainbow {
+  background-image: linear-gradient(to left, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: rainbow-animation 2s ease-in-out infinite;
+}
+
+.upper_animation {
+  
+}
+
+@keyframes rainbow-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -200% 0%;
+  }
+}
+
+
+.vertical-separator {
+  border-left: 1px solid #ccc;
+  height: 100%;
+  margin: 0 20px;
+}
+.horizontal-separator {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.vertical-separator::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 1px solid #ccc;
+  height: 100%;
+}
+.horizontal-separator::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+/* components/Gallery.module.css */
+.galleryFrame {
+  margin: 40px auto;
+  padding: 20px;
+  background-color: #000000;
+}
+
+.galleryHeader {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 72px;
+  font-weight: bold;
+  color: #ffffff;
+}
+
+.galleryContainer {
+  display: flex;
+
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.card {
+  margin: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card Image {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+
 @layer utilities {
   .text-balance {
     text-wrap: balance;
