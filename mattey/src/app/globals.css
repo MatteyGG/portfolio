@@ -50,11 +50,6 @@ body {
   background-size: 200% 200%;
   animation: rainbow-animation 2s ease-in-out infinite;
 }
-
-.upper_animation {
-  
-}
-
 @keyframes rainbow-animation {
   0% {
     background-position: 0% 0%;
@@ -62,6 +57,10 @@ body {
   100% {
     background-position: -200% 0%;
   }
+}
+
+.upper_animation {
+    @apply transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-150 duration-300
 }
 
 
