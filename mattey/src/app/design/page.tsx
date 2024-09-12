@@ -6,6 +6,7 @@ import { useState } from "react";
 
 export default function Design() {
     const [gallery, setGallery] = useState(''); 
+    // TODO: make gallery subgallery
 
     const cards = [
         { imageUrl: '/images/STASIS.png', topic: 'Design Concept 1' },
@@ -28,11 +29,6 @@ export default function Design() {
             <NavBar />
             <div className="galleryFrame">
                 <h1 className="galleryHeader text-3xl">Design projects</h1>
-                <div className="flex justify-center items-center mt-12 gap-8">
-                  <button className="bg-gray-700 px-4 py-2 rounded-md upper_animation" onClick={() => setGallery('web-design')}>Web-design</button>
-                  <button className="bg-gray-700 px-4 py-2 rounded-md upper_animation" onClick={() => setGallery('arts')}>Arts</button>
-                  <button className="bg-gray-700 px-4 py-2 rounded-md upper_animation" onClick={() => setGallery('social-media')}>Social media</button>
-                </div>
                 <div className="galleryFrame">
                     <Gallery images={cards} />
                 </div>

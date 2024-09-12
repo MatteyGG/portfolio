@@ -22,9 +22,9 @@ function NavBar() {
         </ul>
         
         <div className="flex items-center gap-8 animate-pulse duration-700">
-          <Link href="/socials">
+          <Link href="/about">
             <button className="flex items-center gap-0.5  text-white font-bold text-xl">
-              Contact me
+              About me
             </button>
           </Link>
         </div>

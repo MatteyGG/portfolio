@@ -15,18 +15,5 @@ const config: Config = {
       },
     },
   },
-  plugins: [
-    require('tailwind-typewriter')({
-      wordsets: {
-          code: {
-              words: ['[ Code ]'],
-              delay: 3,
-              pauseBetween: 10,
-              caretWidth: '10px',
-              blinkSpeed: 1
-          }
-      }
-  })
-  ],
 };
 export default config;
