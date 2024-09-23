@@ -10,7 +10,7 @@ interface CardProps {
 
 const Card = ({ topic, images, describtion, redirect }: CardProps) => {
   return (
-    <div className="galleryContainer">
+    <div className="">
       <div className="card">
         <h1 className="text-2xl">{topic}</h1>
         <div className="grid grid-cols-2 gap-4">

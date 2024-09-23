@@ -105,15 +105,11 @@ body {
 .galleryFrame {
   margin: 40px auto;
   padding: 20px;
-  @apply grid grid-cols-1 gap-4 justify-center;
+  @apply mt-24 flex gap-4 ;
 }
 
 .galleryHeader {
-  margin-bottom: 20px;
-  text-align: center;
-  font-size: 72px;
-  font-weight: bold;
-  color: #000000;
+  @apply text-3xl mt-12 justify-center text-center;
 }
 
 .galleryContainer {
