@@ -3,22 +3,145 @@
 @tailwind utilities;
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 214, 219, 220;
+  --background-end-rgb: 255, 255, 255;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --foreground-rgb: 255, 255, 255;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
   }
 }
 
 body {
-  color: var(--foreground);
-  background: var(--background);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-no-repeat bg-center bg-cover; 
+  background-image: url('/images/background-w.svg');
+};
+
+.dark body {
+  @apply bg-no-repeat bg-center bg-cover;
+  background-image: url('/images/background-d.svg');
 }
+
+.dark {
+  @apply text-white bg-no-repeat bg-center bg-cover;
+  background-image: url('/images/background-d.svg');
+
+}
+
+
+/* Blink animation */
+.blink {
+  animation: blink-animation 1s steps(5, start) infinite;
+  -webkit-animation: blink-animation 1s steps(5, start) infinite;
+}
+@keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+@-webkit-keyframes blink-animation {
+  to {
+    visibility: hidden;
+  }
+}
+
+/* Rainbow animation */
+.rainbow {
+  background-image: linear-gradient(to left, red, orange, yellow, green, blue, indigo, violet);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 200%;
+  animation: rainbow-animation 2s ease-in-out infinite;
+}
+@keyframes rainbow-animation {
+  0% {
+    background-position: 0% 0%;
+  }
+  100% {
+    background-position: -200% 0%;
+  }
+}
+
+.upper_animation {
+    @apply transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-150 duration-300
+}
+
+
+.vertical-separator {
+  border-left: 1px solid #ccc;
+  height: 100%;
+  margin: 0 20px;
+}
+.horizontal-separator {
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.vertical-separator::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  border-left: 1px solid #ccc;
+  height: 100%;
+}
+.horizontal-separator::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: 50%;
+  transform: translateY(50%);
+  border-bottom: 1px solid #ccc;
+  width: 100%;
+}
+
+/* components/Gallery.module.css */
+.galleryFrame {
+  margin: 40px auto;
+  padding: 20px;
+  @apply grid grid-cols-1 gap-4 justify-center;
+}
+
+.galleryHeader {
+  margin-bottom: 20px;
+  text-align: center;
+  font-size: 72px;
+  font-weight: bold;
+  color: #000000;
+}
+
+.galleryContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @apply flex gap-4 gap-x-8
+}
+
+.card {
+  @apply border-collapse border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden py-4 px-8; ;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.card Image {
+  @apply object-cover p-8 rounded-lg hover:w-1/2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-150 duration-300;
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 10px 10px 0 0;
+}
+
+.card p {
+  margin-top: 10px;
+  font-size: 18px;
+  font-weight: bold;
+}
+
 
 @layer utilities {
   .text-balance {
