@@ -2,10 +2,8 @@
 
 import NavBar from "../components/nav";
 import Gallery from '../components/Gallery';
-import { useState } from "react";
 
 export default function Design() {
-    const [gallery, setGallery] = useState(''); 
     // TODO: make gallery subgallery
 
     const cards = [
