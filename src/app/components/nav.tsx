@@ -5,7 +5,7 @@ import Link from "next/link";
 function NavBar() {
   return (
     <>
-      <nav className="hidden md:flex backdrop-blur-lg py-4">
+      <nav className="hidden md:block backdrop-blur-lg py-4">
         <div className="flex justify-between items-center mx-8">
           <div className="flex text-3xl  items-center">
             <Link href="/">MatteyGG</Link>
