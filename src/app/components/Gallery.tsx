@@ -4,7 +4,7 @@ import Link from "next/link";
 import React from "react";
 
 interface GalleryProps {
-  imageUrl: string;
+  imageUrl: string[];
   topic: string;
   describtion: string;
   redirect: string;
