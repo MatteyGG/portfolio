@@ -17,18 +17,17 @@
 }
 
 body {
-  @apply bg-no-repeat bg-center bg-cover; 
+  @apply  bg-center bg-cover bg-repeat; 
   background-image: url('/images/background-w.svg');
 };
 
 .dark body {
-  @apply bg-no-repeat bg-center bg-cover;
+  @apply bg-center bg-cover bg-repeat;
   background-image: url('/images/background-d.svg');
 }
 
 .dark {
-  @apply text-white bg-no-repeat bg-center bg-cover;
-  background-image: url('/images/background-d.svg');
+  @apply text-white;
 
 }
 
