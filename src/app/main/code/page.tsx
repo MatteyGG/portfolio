@@ -1,10 +1,8 @@
-import Card from "../components/card";
-import NavBar from "../components/nav";
+import Card from "../../components/card";
 
 export default function Code() {
     return (
         <>
-            <NavBar />
             <div className="mt-12">
                 <h1 className="galleryHeader text-3xl">Code projects</h1>
                 <div className="galleryContainer mt-12 justify-center">

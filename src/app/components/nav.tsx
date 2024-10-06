@@ -10,19 +10,19 @@ function NavBar() {
           <div className="flex text-3xl  items-center">
             <div className="flex items-center gap-8 animate-pulse duration-700">
               <button className="flex items-center gap-0.5 font-bold text-xl">
-                <Link href="/about">About me</Link>
+                <Link href="/">Home</Link>
               </button>
             </div>
           </div>
           <ul className="flex justify-center items-center gap-8">
             <li className="upper_animation">
-              <Link href="/">Home</Link>
+              <Link href="/main/about">About</Link>
             </li>
             <li className="upper_animation">
-              <Link href="/code">Code</Link>
+              <Link href="/main/code">Code</Link>
             </li>
             <li className="upper_animation">
-              <Link href="/design">Design</Link>
+              <Link href="/main/design">Design</Link>
             </li>
           </ul>
           <div className="flex gap-4">

@@ -1,10 +1,8 @@
-import NavBar from "../components/nav";
 import Image from "next/image";
 
 export default function About() {
   return (
     <>
-      <NavBar />
       <div className="flex mt-12 justify-center items-center overscroll-none">
         <div className="flex flex-col items-center gap-4">
           <div className="avatar">
