@@ -5,7 +5,7 @@ interface CardProps {
   type?: string; //code | design | hobby
   topic: string;
   images: string[];
-  describtion: string;
+  description: string;
   redirect: string;
   github?: string;
   indev?: boolean;
@@ -16,7 +16,7 @@ const Card = ({
   type,
   topic,
   images,
-  describtion,
+  description,
   redirect,
   github,
   indev,
@@ -28,27 +28,30 @@ const Card = ({
       <div className="inline-flex gap-4">
         <div className="w-1/2 h-32 container6 images">
           {images.length > 0 && (
-            <Image
-              className="z-10 h-full object-cover hover:translate-y-[10%] hover:translate-x-[10%] hover:scale-125 duration-300 ease-in-out"
-              src={images[0]}
-              alt={topic}
-              width={2000}
-              height={2000}
-              quality={100}
-            />
+              <Image
+                className="z-10 h-full object-cover hover:translate-y-[10%] hover:translate-x-[10%] hover:scale-125 duration-300 ease-in-out"
+                src={images[0]}
+                alt={topic}
+                width={2000}
+                height={2000}
+                quality={100}
+              />
           )}
         </div>
         <p className="w-1/2 mt-1 text-balance text-sm line-clamp-3 text-right">
-          {describtion}
+          {description}
         </p>
       </div>
       <div className="inline-flex self-end place-items-center gap-4">
-        <Link href={`/projects${type ? `?type=${type}&topic=${topic}` : `?topic=${topic}`}`}>
-          Read more
+        <Link
+          className="link border-blue-400"
+          href={`/projects${
+            type ? `?type=${type}&topic=${topic}` : `?topic=${topic}`
+          }`}
+        >
+          Read more &rarr;
         </Link>
-        {indev && (
-          <div className="text-green-600 px-2 py-1">In development</div>
-        )}
+        {indev && <div className="text-green-600 px-2 py-1">In dev</div>}
         {github && !isPrivate ? (
           <Link
             href={github}
@@ -71,4 +74,6 @@ const Card = ({
 };
 
 export default Card;
+
+
 
