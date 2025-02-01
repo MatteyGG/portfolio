@@ -62,6 +62,9 @@ function NavBar() {
             <li className="upper_animation">
               <Link href="/design">Design</Link>
             </li>
+            <li className="upper_animation">
+              <Link href="/hobby">Hobby</Link>
+            </li>
           </ul>
         </div>
       </nav>
