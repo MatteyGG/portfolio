@@ -27,7 +27,10 @@ export default function Project() {
         </div>
         <div>
           <p className="text-xl">{project.description}</p>
-          <div className="inline-flex gap-2 text-base mt-2">
+          <div className="inline-flex gap-2 text-base mt-2 items-baseline">
+            {project.indev && (
+              <span className=" text-green-600 ml-4">In development</span>
+            )}
             {project.github && !project.private ? (
               <button
                 onClick={() =>
@@ -40,10 +43,12 @@ export default function Project() {
             ) : (
               <span className=" text-red-600 ml-4">Private</span>
             )}
-            {project.indev && (
-              <span className=" text-green-600 ml-4">In development</span>
-            )}
-            <Link href={project.redirect || "/"} target="_blank" className="link">
+
+            <Link
+              href={project.redirect || "/"}
+              target="_blank"
+              className="link"
+            >
               Visit &uarr;
             </Link>
           </div>

@@ -2,7 +2,11 @@
   "code": [
     {
       "topic": "Portfolio",
-      "images": ["/images/portfolio0.png","/images/portfolio1.png","/images/portfolio3.png"],
+      "images": [
+        "/images/portfolio0.png",
+        "/images/portfolio1.png",
+        "/images/portfolio3.png"
+      ],
       "description": "My portfolio page. Build with Next.js and component Swiper. My portfolio page. Build with Next.js and component Swiper. My portfolio page. Build with Next.js and component Swiper. My portfolio page. Build with Next.js and component Swiper. My portfolio page. Build with Next.js and component Swiper.",
       "redirect": "/code/stasis",
       "github": "https://github.com/MatteyGG/portfolio",
@@ -14,18 +18,40 @@
       "images": ["/images/podgoroy_prew.png"],
       "description": "  Next.js.      .  Next.js.      .",
       "redirect": "/code/stasis",
-      "github": "https://github.com/MatteyGG/podgoroy",
+      "github": "https://github.com/MatteyGG/podgoroy-web",
       "indev": true,
       "private": true
     },
     {
-      "topic": "Stasis",
-      "images": ["/images/stasis_prew.png"],
+      "topic": "StasisWeb",
+      "images": [
+        "/images/stasisweb0.png",
+        "/images/stasisweb1.png",
+        "/images/stasisweb2.png",
+        "/images/stasisweb3.png",
+        "/images/stasisweb4.png",
+        "/images/stasisweb5.png",
+        "/images/stasisweb6.png",
+        "/images/stasisweb7.png"
+      ],
       "description": "  Next.js.      .  Next.js.      .",
-      "redirect": "/code/stasis",
-      "github": "https://github.com/MatteyGG/stasis",
+      "redirect": "https://stasis-wp.ru/",
+      "github": "https://github.com/MatteyGG/stasis-wp",
       "indev": true,
-      "private": true
+      "private": false
+    },
+    {
+      "topic": "StasisDiscord_bot",
+      "images": [
+        "/images/stasisdiscord0.png",
+        "/images/stasisdiscord1.png",
+        "/images/stasisdiscord2.png"
+      ],
+      "description": "  Next.js.      .  Next.js.      .",
+      "redirect": "https://stasis-wp.ru/",
+      "github": "https://discord.gg/MUFaEaUb",
+      "indev": false,
+      "private": false
     }
   ],
   "design": [
