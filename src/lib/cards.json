@@ -1,0 +1,65 @@
+{
+  "code": [
+    {
+      "topic": "Portfolio",
+      "images": ["/images/portfolio0.png","/images/portfolio1.png","/images/portfolio3.png"],
+      "description": "My portfolio page. Build with Next.js and component Swiper. My portfolio page. Build with Next.js and component Swiper. My portfolio page. Build with Next.js and component Swiper. My portfolio page. Build with Next.js and component Swiper. My portfolio page. Build with Next.js and component Swiper.",
+      "redirect": "/code/stasis",
+      "github": "https://github.com/MatteyGG/portfolio",
+      "indev": false,
+      "private": false
+    },
+    {
+      "topic": "Podgoroy",
+      "images": ["/images/podgoroy_prew.png"],
+      "description": "  Next.js.      .  Next.js.      .",
+      "redirect": "/code/stasis",
+      "github": "https://github.com/MatteyGG/podgoroy",
+      "indev": true,
+      "private": true
+    },
+    {
+      "topic": "Stasis",
+      "images": ["/images/stasis_prew.png"],
+      "description": "  Next.js.      .  Next.js.      .",
+      "redirect": "/code/stasis",
+      "github": "https://github.com/MatteyGG/stasis",
+      "indev": true,
+      "private": true
+    }
+  ],
+  "design": [
+    {
+      "topic": "",
+      "images": [],
+      "description": "",
+      "redirect": "",
+      "github": "",
+      "indev": false,
+      "private": false
+    }
+  ],
+  "hobby": [
+    {
+      "topic": "",
+      "images": [],
+      "description": "",
+      "redirect": "",
+      "github": "",
+      "indev": false,
+      "private": false
+    }
+  ],
+  "any" : [
+    {
+      "topic": "",
+      "images": [],
+      "description": "",
+      "redirect": "",
+      "github": "",
+      "indev": false,
+      "private": false
+    }
+  ]
+}
+

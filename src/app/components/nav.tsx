@@ -16,13 +16,16 @@ function NavBar() {
           </div>
           <ul className="flex justify-center items-center gap-8">
             <li className="upper_animation">
-              <Link href="/main/about">About</Link>
+              <Link href="/about">About</Link>
             </li>
             <li className="upper_animation">
-              <Link href="/main/code">Code</Link>
+              <Link href="/code">Code</Link>
             </li>
             <li className="upper_animation">
-              <Link href="/main/design">Design</Link>
+              <Link href="/design">Design</Link>
+            </li>
+            <li className="upper_animation">
+              <Link href="/hobby">Hobby</Link>
             </li>
           </ul>
           <div className="flex gap-4">

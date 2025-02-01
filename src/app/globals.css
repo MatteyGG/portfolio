@@ -112,7 +112,7 @@ body {
 }
 
 .galleryHeader {
-  @apply text-3xl mt-12 justify-center text-center;
+  @apply text-3xl mt-4 justify-center text-center;
 }
 
 .galleryContainer {
@@ -122,28 +122,84 @@ body {
   @apply flex gap-4 gap-x-8
 }
 
+.frame {
+  @apply  mt-4 mx-2 md:mx-12;
+}
+
+.cardHeader {
+  @apply text-3xl justify-center text-center;
+}
+
+.cardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  @apply z-0 grid grid-cols-1 md:grid-cols-2 xl:grid-cols-3 gap-1 gap-x-8
+}
+
+
 .card {
-  @apply border-collapse border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden py-4 px-8; ;
+  @apply  flex flex-col w-full border-collapse border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden py-2 px-4 shadow-md transition-all duration-300;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
-
-.card Image {
-  @apply object-cover p-8 rounded-lg hover:w-1/2 transition ease-in-out delay-100  hover:-translate-y-1 hover:scale-150 duration-300;
-  width: 100%;
-  height: 150px;
-  object-fit: cover;
-  border-radius: 10px 10px 0 0;
-}
-
-.card p {
-  margin-top: 10px;
-  font-size: 18px;
-  font-weight: bold;
-}
-
 
 @layer utilities {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+/* SWIPER */
+.swiper {
+  width: 100%;
+  height: 100%;
+}
+
+.swiper-slide {
+  text-align: center;
+  font-size: 18px;
+
+  /* Center slide text vertically */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.swiper-slide img {
+  @apply block w-full h-full object-cover rounded-lg;
+}
+
+.autoplay-progress {
+  position: absolute;
+  right: 16px;
+  bottom: 16px;
+  z-index: 10;
+  width: 48px;
+  height: 48px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+  color: var(--swiper-theme-color);
+}
+
+.autoplay-progress svg {
+  --progress: 0;
+  position: absolute;
+  left: 0;
+  top: 0px;
+  z-index: 10;
+  width: 100%;
+  height: 100%;
+  stroke-width: 4px;
+  stroke: var(--swiper-theme-color);
+  fill: none;
+  stroke-dashoffset: calc(125.6px * (1 - var(--progress)));
+  stroke-dasharray: 125.6;
+  transform: rotate(-90deg);
+}
+/* End SWIPER */
+
+.link {
+  @apply p-2 rounded-md border  hover:bg-gray-400 transition ease-in-out delay-100 hover:-translate-y-1 hover:scale-110 duration-300;
 }
