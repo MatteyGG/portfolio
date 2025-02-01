@@ -7,7 +7,7 @@
         "/images/portfolio1.png",
         "/images/portfolio3.png"
       ],
-      "description": "My portfolio page. Build with Next.js and component Swiper. My portfolio page. Build with Next.js and component Swiper. My portfolio page. Build with Next.js and component Swiper. My portfolio page. Build with Next.js and component Swiper. My portfolio page. Build with Next.js and component Swiper.",
+      "description": "A personal portfolio website showcasing my projects and skills. Built using Next.js for seamless server-side rendering and Swiper for interactive image carousels. Designed to be clean, responsive, and user-friendly.",
       "redirect": "/code/stasis",
       "github": "https://github.com/MatteyGG/portfolio",
       "indev": false,
@@ -16,7 +16,7 @@
     {
       "topic": "Podgoroy",
       "images": ["/images/podgoroy_prew.png"],
-      "description": "  Next.js.      .  Next.js.      .",
+      "description": "A custom web page designed for Podgoroy, built with Next.js to ensure fast performance and scalability. This project is currently under development and focuses on delivering a modern and engaging user experience.",
       "redirect": "/code/stasis",
       "github": "https://github.com/MatteyGG/podgoroy-web",
       "indev": true,
@@ -34,7 +34,7 @@
         "/images/stasisweb6.png",
         "/images/stasisweb7.png"
       ],
-      "description": "  Next.js.      .  Next.js.      .",
+      "description": "A comprehensive web platform for Stasis, developed using Next.js. Features include dynamic content rendering, responsive design, and seamless navigation. This project is actively being improved to enhance functionality and user experience.",
       "redirect": "https://stasis-wp.ru/",
       "github": "https://github.com/MatteyGG/stasis-wp",
       "indev": true,
@@ -47,7 +47,7 @@
         "/images/stasisdiscord1.png",
         "/images/stasisdiscord2.png"
       ],
-      "description": "  Next.js.      .  Next.js.      .",
+      "description": "Discord authentication bot for Stasis. Build on discord.js. Semiautomated authentication procces with approve from admins.",
       "redirect": "https://stasis-wp.ru/",
       "github": "https://discord.gg/MUFaEaUb",
       "indev": false,
@@ -58,7 +58,7 @@
     {
       "topic": "Avatar generator for Stasis",
       "images": ["/images/picGenerator.png"],
-      "description": "",
+      "description": "A custom avatar generator tool created for Stasis, allowing users to create unique avatars. This project highlights my skills in graphic design and user interface development.",
       "redirect": "",
       "github": "",
       "indev": false,
@@ -67,7 +67,7 @@
     {
       "topic": "Music player video",
       "images": ["/images/musicprew.png"],
-      "description": "",
+      "description": "A visually engaging video concept for a music player interface. This design demonstrates my ability to combine aesthetics with functionality, creating an immersive user experience.",
       "redirect": "https://drive.google.com/file/d/1h5TUXNVlf6SaXmTUSLoepWpPbyc8usHy/view?usp=sharing",
       "github": "",
       "indev": false,
@@ -76,7 +76,7 @@
     {
       "topic": "Kisokix.com 2018",
       "images": ["/images/Igmemories.png"],
-      "description": "",
+      "description": "A nostalgic look back at the 2018 version of Kisokix.com. This project showcases my early work in design and my evolution as a designer over the years.",
       "redirect": "https://drive.google.com/file/d/1STI5kYO-5R5V69bGGTf1qwydTENpfyJN/view?usp=sharing",
       "github": "",
       "indev": false,
@@ -87,18 +87,18 @@
     {
       "topic": "Home assistant",
       "images": ["/images/homeassistant.png"],
-      "description": "",
+      "description": "A personal home automation system powered by Home Assistant and ESP32 microcontrollers. This ongoing project integrates smart devices and sensors to create a seamless and efficient smart home experience.",
       "redirect": "",
       "github": "",
       "indev": true,
       "private": true
     }
   ],
-  "any" : [
+  "any": [
     {
       "topic": "",
       "images": [],
-      "description": "",
+      "description": "This is a placeholder for future projects or ideas. You not supposed to be here!",
       "redirect": "",
       "github": "",
       "indev": false,
@@ -106,4 +106,3 @@
     }
   ]
 }
-
