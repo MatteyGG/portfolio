@@ -21,7 +21,7 @@ export default function Project() {
   return (
     <div className="frame">
       <h1 className="text-left mb-2 text-4xl">{project.topic}</h1>
-      <div className="grid grid-cols-2 grid-rows-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4">
         <div className="w-full row-span-2">
           <Slider srcs={project.images} />
         </div>
