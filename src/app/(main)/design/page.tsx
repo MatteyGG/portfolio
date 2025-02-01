@@ -13,7 +13,6 @@ export default function Design() {
             {cards.design.map((card) => (
               <Card
                 type="design"
-                describtion={card.description}
                 key={card.topic}
                 {...card}
               />

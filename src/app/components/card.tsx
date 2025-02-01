@@ -29,7 +29,7 @@ const Card = ({
         <div className="w-1/2 h-32 container6 images">
           {images.length > 0 && (
               <Image
-                className="z-10 h-full object-cover hover:translate-y-[10%] hover:translate-x-[10%] hover:scale-125 duration-300 ease-in-out"
+                className="z-10 h-full object-cover rounded-md hover:translate-y-[10%] hover:translate-x-[10%] hover:scale-125 duration-300 ease-in-out"
                 src={images[0]}
                 alt={topic}
                 width={2000}

@@ -10,7 +10,6 @@ export default function Code() {
             {cards.code.map((card) => (
               <Card
                 type="code"
-                describtion={card.description}
                 key={card.topic}
                 {...card}
               />

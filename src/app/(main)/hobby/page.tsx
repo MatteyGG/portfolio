@@ -12,7 +12,6 @@ export default function Design() {
           {cards.hobby.map((card) => (
             <Card
               type="hobby"
-              describtion={card.description}
               key={card.topic}
               {...card}
             />
