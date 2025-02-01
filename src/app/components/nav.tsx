@@ -54,7 +54,7 @@ function NavBar() {
         <div className="flex justify-between items-center mx-8">
           <ul className="flex justify-center items-center gap-8">
             <li className="upper_animation">
-              <Link href="/">Home</Link>
+              <Link href="/about">About</Link>
             </li>
             <li className="upper_animation">
               <Link href="/code">Code</Link>

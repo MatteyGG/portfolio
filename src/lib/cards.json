@@ -27,7 +27,6 @@
       "images": [
         "/images/stasisweb0.png",
         "/images/stasisweb1.png",
-        "/images/stasisweb2.png",
         "/images/stasisweb3.png",
         "/images/stasisweb4.png",
         "/images/stasisweb5.png",
@@ -47,7 +46,7 @@
         "/images/stasisdiscord1.png",
         "/images/stasisdiscord2.png"
       ],
-      "description": "Discord authentication bot for Stasis. Build on discord.js. Semiautomated authentication procces with approve from admins.",
+      "description": "A Discord bot designed for Stasis, built on discord.js. It facilitates a semi-automated authentication process, requiring admin approval for user verification. This bot streamlines community management and enhances security.",
       "redirect": "https://stasis-wp.ru/",
       "github": "https://discord.gg/MUFaEaUb",
       "indev": false,
@@ -76,7 +75,7 @@
     {
       "topic": "Kisokix.com 2018",
       "images": ["/images/Igmemories.png"],
-      "description": "A nostalgic look back at the 2018 version of Kisokix.com. This project showcases my early work in design and my evolution as a designer over the years.",
+      "description": "A nostalgic look back at the 2018. This project showcases my early work in design and my evolution as a designer over the years.",
       "redirect": "https://drive.google.com/file/d/1STI5kYO-5R5V69bGGTf1qwydTENpfyJN/view?usp=sharing",
       "github": "",
       "indev": false,
