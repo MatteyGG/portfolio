@@ -56,24 +56,33 @@
   ],
   "design": [
     {
-      "topic": "",
-      "images": [],
+      "topic": "Avatar generator for Stasis",
+      "images": ["/images/picGenerator.png"],
       "description": "",
       "redirect": "",
       "github": "",
       "indev": false,
-      "private": false
+      "private": true
+    },
+    {
+      "topic": "Music player video",
+      "images": ["/images/musicprew.png"],
+      "description": "",
+      "redirect": "https://drive.google.com/file/d/1h5TUXNVlf6SaXmTUSLoepWpPbyc8usHy/view?usp=sharing",
+      "github": "",
+      "indev": false,
+      "private": true
     }
   ],
   "hobby": [
     {
-      "topic": "",
-      "images": [],
+      "topic": "Home assistant",
+      "images": ["/images/homeassistant.png"],
       "description": "",
       "redirect": "",
       "github": "",
-      "indev": false,
-      "private": false
+      "indev": true,
+      "private": true
     }
   ],
   "any" : [
