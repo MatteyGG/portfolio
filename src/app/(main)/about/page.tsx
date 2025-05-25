@@ -1,4 +1,7 @@
+import ProgressBar from "@/app/components/progressbar";
+import { OrbitingAvatar } from "../../components/orbitingAvatar";
 import Image from "next/image";
+import ProgressTooltip from "@/app/components/progressbar";
 
 export default function About() {
   return (
@@ -15,7 +18,7 @@ export default function About() {
             />
             <div className="flex gap-12 items-center ">
               <a
-                className="animate-bounce delay-150 hover:animate-none ease-in-out"
+                className="animate-bounce delay-150 ease-in-out"
                 href="https://t.me/ser_dantes_r"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -28,7 +31,7 @@ export default function About() {
                 />
               </a>
               <a
-                className="animate-bounce delay-500 hover:animate-none ease-in-out"
+                className="animate-bounce delay-500  ease-in-out"
                 href="https://github.com/MatteyGG"
                 target="_blank"
                 rel="noopener noreferrer"
@@ -36,7 +39,7 @@ export default function About() {
                 <Image src="/github.svg" alt="Github" width={50} height={50} />
               </a>
               <a
-                className="animate-bounce delay-1000 hover:animate-none ease-in-out"
+                className="animate-bounce delay-1000  ease-in-out"
                 href="mailto:matgaranin@gmail.com"
                 rel="noopener noreferrer"
               >
@@ -85,7 +88,13 @@ export default function About() {
                 <h2 className="text-2xl font-bold">JavaScript</h2>
                 <div className="flex gap-2">
                   <Image src="/react.svg" alt="React" width={60} height={60} />
-                  <Image src="/next.svg" alt="NextJS" width={60} height={60} />
+                  <ProgressTooltip
+                    label="NextJs"
+                    progress={70}
+                  >
+                    <Image src="/next.svg" alt="NextJS" width={60} height={60} />
+                  </ProgressTooltip>
+                  
                   <Image
                     src="/prism-sharp.svg"
                     alt="Prism"
@@ -120,18 +129,28 @@ export default function About() {
                     width={60}
                     height={60}
                   />
-                  <Image
-                    src="/postgres.svg"
-                    alt="PostgreSQL"
-                    width={60}
-                    height={60}
-                  />
+
+
+                  <ProgressTooltip
+                    label="Web Development"
+                    progress={85}
+                  >
+                    <Image
+                      src="/postgres.svg"
+                      alt="PostgreSQL"
+                      width={60}
+                      height={60}
+                    />
+
+                  </ProgressTooltip>
                 </div>
               </div>
             </div>
           </div>
         </div>
+
       </div>
+      
     </>
   );
 }

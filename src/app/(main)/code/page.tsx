@@ -5,7 +5,7 @@ export default function Code() {
     return (
       <>
         <div className="frame">
-          <h1 className="cardHeader text-3xl">Code projects</h1>
+          <h1 className="cardHeader text-3xl pb-4">Code projects</h1>
           <div className="cardContainer md:mt-12 justify-center">
             {cards.code.map((card) => (
               <Card

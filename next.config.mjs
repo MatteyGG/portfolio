@@ -3,9 +3,10 @@ const nextConfig = {
   images: {
     domains: ["avatars.githubusercontent.com"],
   },
-  experimental: {
-    missingSuspenseWithCSRBailout: false,
-  },
+  // experimental: {
+  //   missingSuspenseWithCSRBailout: false,
+  // },
+
 };
 
 export default nextConfig;

@@ -141,6 +141,8 @@ body {
 .card {
   @apply  flex flex-col w-full border-collapse border border-gray-300 dark:border-gray-700 rounded-lg overflow-hidden py-2 px-4 shadow-md transition-all duration-300;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  transition: box-shadow 0.3s ease;
+  backface-visibility: hidden;
 }
 
 @layer utilities {

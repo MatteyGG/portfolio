@@ -8,7 +8,7 @@ export default function Design() {
     return (
       <>
         <div className="frame">
-          <h1 className="cardHeader text-3xl">Design projects</h1>
+          <h1 className="cardHeader text-3xl pb-4">Design projects</h1>
           <div className="cardContainer">
             {cards.design.map((card) => (
               <Card

@@ -1,9 +1,31 @@
 "use client";
 
+import { motion } from "framer-motion";
 import cards from "@/lib/cards.json";
 import { useSearchParams } from "next/navigation";
 import Slider from "../components/slider";
 import Link from "next/link";
+import { FiGithub, FiExternalLink } from "react-icons/fi";
+
+const containerVariants = {
+  hidden: { opacity: 0 },
+  visible: {
+    opacity: 1,
+    transition: {
+      staggerChildren: 0.1,
+      delayChildren: 0.2
+    }
+  }
+};
+
+const itemVariants = {
+  hidden: { y: 20, opacity: 0 },
+  visible: {
+    y: 0,
+    opacity: 1,
+    transition: { type: "spring", stiffness: 120 }
+  }
+};
 
 export default function Project() {
   const searchParams = useSearchParams();
@@ -19,41 +41,70 @@ export default function Project() {
   if (!project) return <div>Project not found</div>;
 
   return (
-    <div className="frame">
-      <h1 className="text-left mb-2 text-4xl">{project.topic}</h1>
-      <div className="grid grid-cols-1 md:grid-cols-2 grid-rows-2 gap-4">
-        <div className="w-full row-span-2">
-          <Slider srcs={project.images} />
-        </div>
-        <div>
-          <p className="text-xl">{project.description}</p>
-          <div className="inline-flex gap-2 text-base mt-2 items-baseline">
-            {project.indev && (
-              <span className=" text-green-600 ml-4">In development</span>
-            )}
-            {project.github && !project.private ? (
-              <button
-                onClick={() =>
-                  window.open(project.github, "_blank", "noopener,noreferrer")
-                }
-                className="link"
-              >
-                Github
-              </button>
-            ) : (
-              <span className=" text-red-600 ml-4">Private</span>
-            )}
+    <motion.div
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      className="frame max-w-6xl mx-auto px-4 py-8"
+    >
+      <motion.div
+        variants={containerVariants}
+        initial="hidden"
+        animate="visible"
+      >
+        <motion.h1 variants={itemVariants} className="text-4xl md:text-5xl font-bold mb-6">
+          {project.topic}
+        </motion.h1>
 
-            <Link
-              href={project.redirect || "/"}
-              target="_blank"
-              className="link"
-            >
-              Visit &uarr;
-            </Link>
+        <div className="grid lg:grid-cols-[1fr_400px] gap-8">
+          <motion.div
+            variants={itemVariants}
+            className="relative aspect-video rounded-xl overflow-hidden shadow-xl"
+          >
+            <Slider srcs={project.images} />
+          </motion.div>
+
+          <div className="flex flex-col gap-6">
+            <motion.p variants={itemVariants} className="text-xl leading-relaxed">
+              {project.description}
+            </motion.p>
+
+            <motion.div variants={itemVariants} className="flex flex-wrap gap-4 items-center">
+              {project.indev && (
+                <span className="px-3 py-1 bg-green-100 text-green-800 rounded-full text-sm">
+                  In Development
+                </span>
+              )}
+
+              <div className="flex gap-4">
+                {project.github && !project.private ? (
+                  <motion.button
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                    className="flex items-center gap-2 px-4 py-2 bg-gray-800 text-white rounded-lg hover:bg-gray-700"
+                    onClick={() => window.open(project.github, "_blank")}
+                  >
+                    <FiGithub className="text-xl" />
+                    <span>GitHub</span>
+                  </motion.button>
+                ) : (
+                  <span className="px-4 py-2 text-red-600">Private</span>
+                )}
+
+                <motion.div whileHover={{ scale: 1.05 }} whileTap={{ scale: 0.95 }}>
+                  <Link
+                    href={project.redirect || "/"}
+                    target="_blank"
+                    className="flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700"
+                  >
+                    <FiExternalLink />
+                    <span>Live Demo</span>
+                  </Link>
+                </motion.div>
+              </div>
+            </motion.div>
           </div>
         </div>
-      </div>
-    </div>
+      </motion.div>
+    </motion.div>
   );
 }
